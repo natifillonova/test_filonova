@@ -1,0 +1,422 @@
+@font-face {
+    font-family: 'pt_sansbold';
+    src: url('../fonts/pt_sans_bold/pts75f-webfont.eot');
+    src: url('../fonts/pt_sans_bold/pts75f-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pt_sans_bold/pts75f-webfont.woff2') format('woff2'),
+         url('../fonts/pt_sans_bold/pts75f-webfont.woff') format('woff'),
+         url('../fonts/pt_sans_bold/pts75f-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pt_sansregular';
+    src: url('../fonts/pt_sans_regular/pts55f-webfont.eot');
+    src: url('../fonts/pt_sans_regular/pts55f-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pt_sans_regular/pts55f-webfont.woff2') format('woff2'),
+         url(../fonts/pt_sans_regular/'pts55f-webfont.woff') format('woff'),
+         url(../fonts/pt_sans_regular/'pts55f-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.main{
+	/*border: 2px solid black;*/
+	width: 600px;
+	min-height: 300px;
+	padding-top: 30px;
+	margin-top:100px;
+	margin-left: 300px;
+	padding-bottom: 200px;
+	text-align: center;
+	background-color: #f6f6f6
+}
+
+.first_cell{
+	display: inline-block;
+	width: 250px;
+	font-size: 16pt;
+	font-family: 'pt_sansbold';
+	padding-bottom: 10px;
+	color: black;
+	text-align: left;
+}
+
+.second_cell {	
+	display: inline-block;
+	font-size: 16pt;
+	font-family: 'pt_sansregular';
+	width: 200px;
+	border-bottom: 1px solid #acacac;
+	text-align: left;
+	color: black;
+	padding-bottom: 10px;
+
+}
+
+.sample_1{	
+	padding-top: 60px;
+	display: inline-block;
+	width: 250px;
+	font-family: 'pt_sansbold';
+	color: black;
+	font-size: 16pt;
+	text-align: left;
+
+}
+
+.sample_2{
+	display: inline-block;
+	 width: 200px;
+}
+
+.field_1{
+	font-size: 16pt;
+	font-family: 'pt_sansregular';
+	border-bottom: 1px solid #acacac;
+	border-top: #f6f6f6;
+	border-left: #f6f6f6;
+	border-right: #f6f6f6;
+	background-color: #f6f6f6;
+}
+
+select {
+	width: 200px;
+}
+
+ select:focus {
+ 	outline: none !important;
+ }
+
+#sample_3{
+	display: inline-block;
+	padding-top: 30px;
+	
+}
+
+.third_cell{
+	display: inline-block;
+	width: 250px;
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+
+.fourth_cell{
+	display: inline-block;
+	width: 200px;
+	padding-bottom: 10px;
+	font-family: 'pt_sansregular';
+	font-size: 13pt;
+	text-align: left;
+	color: #e60000;
+}
+
+
+
+.switch {
+  position: relative;
+  display: block;
+  width: 70px;
+  height: 40px;
+  top: 32px;
+}
+
+.switch input {
+	display:none;
+}
+
+.info_switch{
+	display: inline-block;
+	width: 200px;
+	float: right;
+	font-family: 'pt_sansregular';
+	font-size: 13pt;
+	color: #3d3d3d;
+}
+
+.slider {
+  position: absolute;
+  display: inline-block;
+  bottom: 20px;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #7f7f7f;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 32px;
+  width: 32px;
+  left: 3px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+input:checked + .slider {
+  background-color: #e0e0e0;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(32px);
+  -ms-transform: translateX(32px);
+  transform: translateX(32px);
+}
+
+input:checked [.fourth_cell]{
+	visibility: hidden;
+
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+
+
+
+.slider.round {
+ 	 border-radius: 34px;
+
+}
+
+.slider.round:before {
+ 	 border-radius: 50%;
+}
+
+.slider:after {
+	 content:'да';
+	 color: black;
+	 display: block;
+	 position: absolute;
+	 font-size: 13pt;
+	 margin-top: 8px;
+	 margin-left: 45px;
+	
+}
+
+input:checked + .slider:after {  
+	content:'нет';
+	color: black;
+	margin-left: 2px;
+	font-family: 'pt_sansregular';
+
+}
+
+/*Не разобралась как без использования jQuery, при выборе элемента "нет" делать красный текст невидимым. (ниже то что пришло в голову) */
+/*.fourth_cell{
+	visibility: hidden;
+}
+
+label.switch:focus + .fourth_cell {
+	visibility: visible;
+}
+*/
+
+
+.sample_4{
+	display: inline-block;
+	width: 250px; 
+	padding-top: 50px;
+	text-align: left;
+	font-family: 'pt_sansbold';
+	font-size: 16pt;
+	position: relative;
+}
+
+.sample_5{
+	display: inline-block;
+	width: 200px;
+
+}
+
+/*.sample_4:before{
+	content: "  i";
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	border-radius: 20px;
+	border: 1px solid #c5c5c5;
+	top: 48px;
+    right: 63px;
+    color: #c5c5c5;
+    text-align: center;
+}
+
+*/
+
+.field_2{
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 20px;
+	font-size: 16pt;
+	font-family: 'pt_sansregular';
+	background: #f6f6f6;
+}
+
+.field_2:focus{
+	border-radius: 20px;
+	border-color: 1px solid #c5c5c5;
+}
+
+
+.support{
+	display: inline-block;
+    position: relative;
+    color: #c5c5c5;
+    text-decoration: none;
+    left: 170px;
+    top: 25px;
+    cursor: pointer;
+    font-family: 'pt_sansregular';
+    width: 25px;
+	height: 25px;
+	border-radius: 20px;
+}
+
+.support em{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	border-radius: 20px;
+	background-color: #f6f6f6;
+	border: 1px solid #c5c5c5;
+	top: 48px;
+    right: 63px;
+    color: #c5c5c5;
+    text-align: center;
+}
+
+.support:before {
+	content: "Подсказка";
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: -25px;
+    left: 10px; 
+    border-radius: 10px 10px 10px 0;      
+    background-color: #c5c5c5;
+    text-align: center;
+    color: #000;
+    opacity: .5;    
+    padding: 3px;
+    margin: -15px 0 0 10px;
+    width: 120px;
+    min-height: 25px;
+    height: auto;
+    font-family: 'pt_sansregular';
+    font-size: 16pt;
+}
+
+.support:hover::before{
+	display: inline-block;
+}
+.sample_6{
+	display: inline-block;
+	width: 250px;
+	text-align: left;
+	padding-top: 60px;
+	font-size: 16pt;
+	font-family: 'pt_sansbold';
+
+}
+
+.sample_7{
+	display: inline-block;
+	width: 200px;
+}
+
+.field_3{
+	font-size: 16pt;
+	font-family: 'pt_sansregular';
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 20px;
+	background: #f6f6f6;
+}
+
+
+.sample_8{
+	width: 250px;
+	display: inline-block;
+	padding-top: 60px;
+	text-align: left;
+	font-family: 'pt_sansbold';
+	font-size: 16pt;
+}
+
+.sample_9{
+	width: 200px;
+	display: inline-block;
+	position: relative;
+}
+
+.sample_9:before{
+	content: "";
+	position: absolute;
+	width: 70px;
+	border-bottom: 1px solid #bebebe;
+	left: 130px;
+}
+
+.sample_9:after{
+	content: "";
+	position: absolute;
+	width: 70px;
+	border-bottom: 1px solid #bebebe;
+	top: 0;
+	width: 30px;
+	right: 154px;
+}
+
+
+.field_4{
+	width: 120px;
+	position: relative;
+	border-radius: 20px;
+	border-top: 1px solid #bebebe;
+	border-bottom: 1px solid #bebebe;
+	border-left: 1px solid #bebebe;
+	border-right: 1px solid #bebebe;
+	min-height: 25px;
+	padding-top: 10px;
+	background: white;
+	left: 45px;
+    top: -20px;
+}
+
+.sample_10{
+	width: 350px;
+	padding-top: 50px;
+}
+
+.button{
+	background-color: #f6f6f6;
+    border: 1px solid red;
+    color: red;
+    width: 250px;
+    position: relative;
+    left: 25px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 30px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'pt_sansbold';
+	font-size: 13pt;
+
+}
